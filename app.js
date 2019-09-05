@@ -18,5 +18,5 @@ app.listen(process.env.SERVER_PORT || 8080, () => {
   console.log(`Am listening Port Id: ${process.env.SERVER_PORT}`);
 });
 
-app.use("/", userController);
+app.use("/api", userController);
 app.use("/api/servercheck", checkServer);
